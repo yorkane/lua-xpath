@@ -52,6 +52,11 @@ Installation
 
         luarocks build rockspec/lua-xpath-<version>.rockspec
 
+* To install with openresty
+
+        ln -s /usr/local/openresty/luajit/include/luajit-2.1/ /usr/include/lua5.1
+        ln -s /usr/local/openresty/luajit/lib/libluajit-5.1.so /lib/liblua-5.1.so
+        ./configure LUA_LIB=/lib/lua/5.1/liblua-5.1.so
 
 
 
